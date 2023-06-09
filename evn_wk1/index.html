@@ -8,12 +8,30 @@ each of the tags need to be opened as well as closed, otherwise our browser will
 
 <head> <!-- this tag works for the head section. This is opening tag-->
     <title>Our First HTML page, or Web Page</title><!-- this tag set a title for the web page. This title view in the tab--> 
+    <!--Inside the head tags, we use meta information to give a concrete/summative information regarding the html page
+
+All the meta information should be present inside the head tag-->
     <meta charset="utf-8">
+    <meta name="application-name" content="Vanier College Evening Class Template">
+    <meta name="author" content="Kawser Wazed Nafi">
+    <meta name="keywords" content="College education, éducation universitaire, html">
+    <meta name="description" content=" This is an example website for the vanier college evening students">
+    <!--viewport: it helps us to get the user's device screen size (visible page size) and dynamically convert the 
+pages to that target visible width-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- by this we enable that our web pages are going to be dynamically reshuffeled for the target device/user's device-->
+    <!-- favicon: favourite Icon... the icon you want to view in the browser tap-->
+    <link rel="icon" type="image/x-icon" href="favicon.jpg"> <!-- type is optional -->
     
 </head> <!-- This is closinging tag-->
 
+    <!-- We put the navigation section in between the head/header and body section. All the pages you want to add
+as navigation in your page, you need to add then as list element insider the navigation section-->
+<nav>
+    <a href="index.html">home</a> &nbsp; &nbsp;  &nbsp; <a href="https://www.vaniercollege.qc.ca/">Vanier College</a>  <!-- a represents anchor node. If you want to add any navigable page to the word, you need to put that word inside the anchor node and then with the anchor node, you are going to provide that link of the inner page/ link of a hosted page. the link should be provided with the href (hyperlink referrence) tag-->
+</nav>
 <body> <!-- this is body tag.. every tag requires open and close tag. With the open and close tag, we define the scope of that tag-->
     <!-- You can put anything in the body section. This will be view as text on the browser-->
+    <div width="200px"> <!-- div abbreviation is division, if you want to -->
     This is my first application. 
     <br> <!-- This is line break tag. This means, whenever you are going to use this tag, the lineor the text will get a break
 and will go to the new line-->
@@ -29,9 +47,17 @@ and will go to the new line-->
     <br>
     This is my seventh line in the application.
     <br>
+    </div>
+    
+    <div>
+    <!--Adding Image in the web Page -->
+    <img src="Landscape-Color.png" width="75%"> <!-- with image tag, you don't need to use any closing tag. Only the closing element is fine
+    If you don't provide image width and height, the page will by default take the image width and height.-->
+    </div>
+        <img src="image.jpeg" alt="Image formatting was wrong" width="75%">
     
     <!-- Page Section Heading-->
-    
+    <div>
     <h1>Section I: Course Plan</h1><!-- Heading tag.. the highest heading tag-->
     <p>All the classes and exams will take place in online. Students are required to access their webcam during the exam time and at the time of any assessments.
 Teacher will record the class and share that with the students after the class.</p> <!-- this tag is for putting paragram. If you want to put a paragraph of texts, you need to put them inside the paragraph tags
@@ -48,14 +74,52 @@ with paragraph tag we automatically gets a new line at the beginning and again g
     <!-- If you want to use blockquote, you have to put it seperate from a pragraph. YOu can do the same things here
 as you do inside a paragraph tag-->
     <blockquote>
-        All the <em>class recordings, required documentation<sup>1</sup> and tutorials</em> will be provided to students throughout the semester. The instructor is open to use and refer any online tutorials whenever required
+        All the <em>class recordings, <mark>required documentation<sup>1</sup></mark> and tutorials</em> will be provided to students throughout the semester. The instructor is open to use and refer any online tutorials whenever required
     </blockquote>
+    </div>
+    
+        <!-- For any list items and elements, you can either put them inside a paragraph or you can put them
+as seperate element to anywhere in the page-->
+      <p>  
+        There are several ways by which we can communicate with a server from client side using internet/networking systems. They are:
+    </p>
+        <ol><!-- ol represents ordered list -->
+            <li>TCP</li> <!-- li tags are used to add any list element in the web/html page -->
+            <li>IP</li> <!-- By default all the html elements are put in unordered list, means they will be listed with bullet point-->
+            <li>HTTP</li>
+            <li>FTP</li>
+            <li>HTTPs</li>
+            <li>IPV6</li>
+
+        </ol>
+        <ul> <!-- ul represents unordered list -->
+            <li>TCP</li> <!-- li tags are used to add any list element in the web/html page -->
+            <li>IP</li> <!-- By default all the html elements are put in unordered list, means they will be listed with bullet point-->
+            <li>HTTP</li>
+            <li>FTP</li>
+            <li>HTTPs</li>
+            <li>IPV6</li>
+        </ul>
+    <p> The abbreviation with small descriptions are going to be stated in the following section:</p>
+    <dl> <!-- dl represents description list-->
+        <dt> &lt; TCP &gt; </dt>
+        <dd> Transmission Control Protocol </dd>
+        <dt> IP</dt>
+        <dd> Internet Protrocol</dd>
+        <dt>HTTP</dt>
+        <dd>HyperText Transfer Protocol</dd>
+        <dt>FTP</dt>
+        <dd>File Transfer Protocol</dd>
+    </dl>
     
     
 </body> <!-- This is body closing tag-->
 
 <footer> 
     <h6><sup>1</sup>Section III: Class Notes</h6>
-    <sub>*</sub>It is quite optional. There are thousands of online codes and examples of HTML/CSS
+    <sub>*</sub>It is quite optional, &nbsp;&nbsp;&nbsp;&nbsp; There are thousands of online codes &amp; examples of HTML/CSS
+    <br>
+    &copy; <a href="https://scholar.google.com/citations?user=yE5KKP4AAAAJ&hl=en&oi=ao">Kawser Wazed Nafi</a> <strong>08.06.2023</strong><br>
+    email <a href="mailto:kwnafi@yahoo.com">kwnafi@yahoo.com</a> &nbsp; &nbsp; cell phone <a href="Tel:888-888-8888">888-888-8888</a>
     
 </footer>
