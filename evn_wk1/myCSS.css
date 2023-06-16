@@ -1,0 +1,39 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    justify-content: center;
+    background-color: azure;
+    color: cadetblue;
+    font-size: 100%;
+}
+/*<!-- css class -->*/
+.div1 {
+    position: static;
+    border: 3px solid #73AD21; /* the width of border, the line, the color*/
+    width: 49%;
+    left: 30px;
+    background-color: beige;
+    color: brown;
+    font-size: 100%;
+    word-spacing: 8pt;
+    text-shadow: 2px 2px #eee0ee;
+}
+/* anything with # in css calls ID*/
+.content {font-size: 28pt; color: darkgreen;}
+
+#div2 {
+    position: sticky;
+    top: 0;
+    border: 3px solid #73AD21; 
+    width: 49%;
+    background-color: #E6E6FA;
+    color: #191970;
+    font-family: Arial, Verdana, sans-serif;
+    
+}
+
+p{
+    color: crimson;
+    font-family: sans-serif;
+}

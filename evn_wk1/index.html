@@ -22,6 +22,35 @@ pages to that target visible width-->
     <!-- favicon: favourite Icon... the icon you want to view in the browser tap-->
     <link rel="icon" type="image/x-icon" href="favicon.jpg"> <!-- type is optional -->
     
+    <!--External CSS
+    Add the css file in relative way or full path-->
+    <link rel="stylesheet" type="text/css" href="myCSS.css">
+    
+    <!--internal CSS
+        to add internal CSS, we need to call the style tags insider the head tag and then we need to provide
+        the CSS formatting properties for each of the elements-->
+    <!--
+    <style>
+        body {
+            
+            justify-content: center;
+            background-color: azure;
+            color: cadetblue;
+            font-size: 14pt;
+        }
+        
+        .div1 {
+            background-color: beige;
+            color: brown;
+            font-size: 10pt;
+        }
+        p{
+            color: crimson;
+            font-family: cursive;
+        }
+    
+    </style>
+    -->
 </head> <!-- This is closinging tag-->
 
     <!-- We put the navigation section in between the head/header and body section. All the pages you want to add
@@ -31,7 +60,13 @@ as navigation in your page, you need to add then as list element insider the nav
 </nav>
 <body> <!-- this is body tag.. every tag requires open and close tag. With the open and close tag, we define the scope of that tag-->
     <!-- You can put anything in the body section. This will be view as text on the browser-->
-    <div width="200px"> <!-- div abbreviation is division, if you want to -->
+    
+    
+    <!-- inline css: You have to put the style parameter and then put the contents/features one after another.
+    <div style="background-color: antiquewhite; font-size: 14pt; font-family: serif; color: brown; width: 200pt;">-->
+    
+     <!-- div abbreviation is division, if you want to -->
+    <div>
     This is my first application. 
     <br> <!-- This is line break tag. This means, whenever you are going to use this tag, the lineor the text will get a break
 and will go to the new line-->
@@ -57,9 +92,11 @@ and will go to the new line-->
         <img src="image.jpeg" alt="Image formatting was wrong" width="75%">
     
     <!-- Page Section Heading-->
-    <div>
+    <div class="div1">
+        <!--<h1 style="font-weight: 300; font-family: cursive; font-style: normal;";>
+        <p style="background-color: azure; font-size: 14pt;margin-left: 14pt;">-->
     <h1>Section I: Course Plan</h1><!-- Heading tag.. the highest heading tag-->
-    <p>All the classes and exams will take place in online. Students are required to access their webcam during the exam time and at the time of any assessments.
+        <p>All the classes and exams will take place in online. Students are required to <span class="content">access their webcam during the exam time</span> and at the time of any assessments.
 Teacher will record the class and share that with the students after the class.</p> <!-- this tag is for putting paragram. If you want to put a paragraph of texts, you need to put them inside the paragraph tags
 
 with paragraph tag we automatically gets a new line at the beginning and again gets another at the end-->
@@ -80,10 +117,11 @@ as you do inside a paragraph tag-->
     
         <!-- For any list items and elements, you can either put them inside a paragraph or you can put them
 as seperate element to anywhere in the page-->
-      <p>  
+    <div id="div2">  
+    <p>  
         There are several ways by which we can communicate with a server from client side using internet/networking systems. They are:
     </p>
-        <ol><!-- ol represents ordered list -->
+        <ol ><!-- ol represents ordered list -->
             <li>TCP</li> <!-- li tags are used to add any list element in the web/html page -->
             <li>IP</li> <!-- By default all the html elements are put in unordered list, means they will be listed with bullet point-->
             <li>HTTP</li>
@@ -100,6 +138,7 @@ as seperate element to anywhere in the page-->
             <li>HTTPs</li>
             <li>IPV6</li>
         </ul>
+        </div>
     <p> The abbreviation with small descriptions are going to be stated in the following section:</p>
     <dl> <!-- dl represents description list-->
         <dt> &lt; TCP &gt; </dt>

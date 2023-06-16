@@ -1,0 +1,15 @@
+body {
+    justify-content: center;
+    background-color: azure;
+    color: cadetblue;
+    font-size: 14pt;
+}
+.div1 {
+    background-color: beige;
+    color: brown;
+    font-size: 10pt;
+}
+p{
+    color: crimson;
+    font-family: cursive;
+}
