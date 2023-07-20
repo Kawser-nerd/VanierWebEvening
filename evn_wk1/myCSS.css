@@ -3,18 +3,26 @@ body {
     margin-right: auto;
     width: 80%;
     justify-content: center;
-    background-color: azure;
+    /*background-color: azure;*/
+    
+    /*background: url(background1.png) no-repeat top,        
+        url(background2.png) no-repeat bottom,
+        url(backgroud3.png) no-repeat;
+    */
+    background-image: radial-gradient(#008000,#FFFFFF,#FF0000);
     color: cadetblue;
     font-size: 100%;
 }
 /*<!-- css class -->*/
 .div1 {
     position: static;
-    border: 3px solid #73AD21; /* the width of border, the line, the color*/
-    width: 49%;
     left: 30px;
     background-color: beige;
-    color: brown;
+    /*background-image: url(backgroundImage.jpg);*/
+    color: #191970;
+    font-family: Georgia, "Times New Roman";
+    border-bottom: 3px dashed #191970;
+    padding: 10px;
     font-size: 100%;
     word-spacing: 8pt;
     text-shadow: 2px 2px #eee0ee;
@@ -25,15 +33,33 @@ body {
 #div2 {
     position: sticky;
     top: 0;
-    border: 3px solid #73AD21; 
-    width: 49%;
+    
+    
     background-color: #E6E6FA;
     color: #191970;
     font-family: Arial, Verdana, sans-serif;
     
 }
 
-p{
+.section{
+    
+    /*border-bottom: 3px dashed #FF0000;
+    border-top: 7px solid #FF0000;
+    margin-left: 10px;
+    */
+    
+    border: 2px solid #FF0000;
+    /*border-radius: 10px 20px;(10px: left-top, right-bottom, 20px: left-bottom, right-top )*/
+    /*border-radius: 10px 30px 20px;(10px: left-top, 30px: left-bottom,right-top , 20px: right-bottom, right-top )*/
+    border-radius: 10px 30px 20px 40px;/*(10px: left-top, 30px: right-top, 20px: right-bottom, 40px: left-bottom )*/
+    
+    /*padding: 20px 10px; (20px Top & Bottom, 10px Left & Right)*/
+    padding: 20px 10px 15px; /*(20px Top, 10px left & Right, 15px Bottom)*/
+    /*padding: 20px 10px 15px 5px; 
+    (20px Top, 10px Right, 15px Bottom, 5px Left)*/
+}
+
+/*p{
     color: crimson;
     font-family: sans-serif;
-}
+}*/

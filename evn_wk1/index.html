@@ -83,11 +83,27 @@ and will go to the new line-->
     This is my seventh line in the application.
     <br>
     </div>
+    <!-- Adding a horizontal Line -->
+    <hr>
+    <hr>
+    <hr>
+    
     
     <div>
     <!--Adding Image in the web Page -->
-    <img src="Landscape-Color.png" width="75%"> <!-- with image tag, you don't need to use any closing tag. Only the closing element is fine
-    If you don't provide image width and height, the page will by default take the image width and height.-->
+    <img src="Landscape-Color.png" width="75%" alt="Landspace Images" usemap="#workmap">
+    <map name="workmap"> <!-- the map name over here and img tag usemap needs to be same -->
+        <area shape="rect" coords="0,660,1580,420" alt="MontMorency Lake" href="https://www.sepaq.com/destinations/parc-chute-montmorency/index.dot?language_id=1">
+        <area shape="circle" coords="800, 300, 100" alt="Peak of Hill" href="https://www.britannica.com/place/Monteregian-Hills">
+        
+    </map>
+        <!-- with image tag, you don't need to use any closing tag. Only the closing element is fine
+    If you don't provide image width and height, the page will by default take the image width and height.
+
+    workmap is the name of the image map
+    -->
+    <!-- Image Map Properties-->
+    
     </div>
         <img src="image.jpeg" alt="Image formatting was wrong" width="75%">
     
@@ -95,7 +111,7 @@ and will go to the new line-->
     <div class="div1">
         <!--<h1 style="font-weight: 300; font-family: cursive; font-style: normal;";>
         <p style="background-color: azure; font-size: 14pt;margin-left: 14pt;">-->
-    <h1>Section I: Course Plan</h1><!-- Heading tag.. the highest heading tag-->
+    <h1 class="section">Section I: Course Plan</h1><!-- Heading tag.. the highest heading tag-->
         <p>All the classes and exams will take place in online. Students are required to <span class="content">access their webcam during the exam time</span> and at the time of any assessments.
 Teacher will record the class and share that with the students after the class.</p> <!-- this tag is for putting paragram. If you want to put a paragraph of texts, you need to put them inside the paragraph tags
 
@@ -121,6 +137,7 @@ as seperate element to anywhere in the page-->
     <p>  
         There are several ways by which we can communicate with a server from client side using internet/networking systems. They are:
     </p>
+        
         <ol ><!-- ol represents ordered list -->
             <li>TCP</li> <!-- li tags are used to add any list element in the web/html page -->
             <li>IP</li> <!-- By default all the html elements are put in unordered list, means they will be listed with bullet point-->
@@ -129,7 +146,23 @@ as seperate element to anywhere in the page-->
             <li>HTTPs</li>
             <li>IPV6</li>
 
-        </ol>
+        </ol> 
+        <hr>
+        <br>
+        <hr>
+        <!-- Meter Element -->
+        TCP &nbsp; <meter value="80" min="0" max="100">TCP</meter> 80% users use this protocol <br>
+        IP &nbsp; <meter value="60" min="0" max="100"> IP </meter> 60% users use this protocol <br>
+        
+        <br>
+        <hr>
+        <hr>
+        <!-- Progress Bar-->
+        <br>
+        <progress value="55" max="100">55</progress> &nbsp; progress has done so far <br>
+        <hr>
+        
+        
         <ul> <!-- ul represents unordered list -->
             <li>TCP</li> <!-- li tags are used to add any list element in the web/html page -->
             <li>IP</li> <!-- By default all the html elements are put in unordered list, means they will be listed with bullet point-->

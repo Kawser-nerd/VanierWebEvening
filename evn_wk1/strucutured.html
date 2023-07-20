@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Two column layout home </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- by this we enable that our web pages are going to be dynamically reshuffeled for the target device/user's device-->
+    <!-- favicon: favourite Icon... the icon you want to view in the browser tap-->
+    <link rel="icon" type="image/x-icon" href="favicon.jpg"> <!-- type is optional -->
+        <!-- Embedded CSS-->
+        <style>
+            .wrapper{
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 90%;
+                    justify-content: center;
+                    background-color: beige;
+                    color: cadetblue;
+                    font-size: 100%;
+            }
+            .header{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 10px;
+                /*background-image: url(background1.png);*/
+            }
+            
+            .nav{
+                clear: both;
+                float: left;
+                margin: auto;
+                width: 20%;
+            }
+            .nav ul{
+            }
+            
+            .nav li{
+                
+                list-style-type: none;
+            }
+            .nav a{
+                text-decoration: none;
+                display: block;
+                width: 60px; 
+                padding: 5px;
+                text-align: center;
+            }
+            /* Mouse Hover Property to change mouse position text bg color*/
+            
+            .nav a:hover{
+                background-color: bisque;
+                
+            }
+            
+            .content{
+                float: right;
+                margin-left: 10px;
+                width: 78%;
+            }
+            
+            
+            /*DropDown Menu contents*/
+            
+            .dropbtn{
+                background-color: beige;
+                border: none;
+                color: brown;
+                padding: 5px;
+                font-size: 16px;
+                
+            }
+            
+            .dropdown{
+                position: relative;
+                display: inline-block;
+            }
+            
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                background-color: bisque;
+                min-width: 150px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1; /*overlapping ratio.... 1 means no overlap*/
+            }
+            
+            .dropdown-content a{
+                color: brown;
+                padding: 10px;
+                text-decoration: none;
+                display: block;
+            }
+            
+            /*hover background color change*/
+            .dropdown-content a:hover{
+                background-color: burlywood;
+            }
+            
+            .dropdown:hover .dropdown-content{
+                display: block;
+            }
+            
+            .dropdown:hover .dropbtn{
+                background-color: bisque;
+            }
+            
+        </style>
+        
+
+    </head>
+    
+    <!-- body Section -->
+    <body class="wrapper">
+        <!-- wrapper div-->
+        <div class="header">
+            <img src="Landscape-Color.png" width="100%">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <br>
+                <li><a href="">About</a></li>
+                <br>
+                <li><a href="">Old Page</a></li>
+                <br>
+                <li><a href="">External Events</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            
+            <!-- Button Menu... Another option to have menu items in your program. You can use the following link to add button menu items in your program
+
+        https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_hover
+            -->
+            
+            <h1>Section I: Course Plan</h1><!-- Heading tag.. the highest heading tag-->
+        <p>All the classes and exams will take place in online. Students are required to <span>access their webcam during the exam time</span> and at the time of any assessments.
+Teacher will record the class and share that with the students after the class.</p> <!-- this tag is for putting paragram. If you want to put a paragraph of texts, you need to put them inside the paragraph tags
+
+with paragraph tag we automatically gets a new line at the beginning and again gets another at the end-->
+    
+    <h3>Section II: Require Textbook/Materials</h3>
+    <p><b>No specific</b> book is recommended. The student can use any related textbook<sub>*</sub> for learning the materials.
+        <br> <!-- you can put/use any other tags/html elements insider the paragraph tags.i.e. br is here to put a line break-->
+        <br>
+        
+    </p>
+    
+    <!-- If you want to use blockquote, you have to put it seperate from a pragraph. YOu can do the same things here
+as you do inside a paragraph tag-->
+    <blockquote>
+        All the <em>class recordings, <mark>required documentation<sup>1</sup></mark> and tutorials</em> will be provided to students throughout the semester. The instructor is open to use and refer any online tutorials whenever required
+    </blockquote>
+    
+    
+        <!-- For any list items and elements, you can either put them inside a paragraph or you can put them
+as seperate element to anywhere in the page-->
+    
+    <p>  
+        There are several ways by which we can communicate with a server from client side using internet/networking systems. They are:
+    </p>
+        
+        
+        <!-- Dropdown Menu things -->
+        <!-- For any of the dropdown menu items, we need two div, one for the outer
+        content, which is a link/button, then the inner items/entries, consider as inner items or entries or list menus-->
+            
+        <div class="dropdown">
+            <button class="dropbtn">Communication Systems</button>
+            <div class="dropdown-content">
+                <a href="#">TCP</a>
+                <a href="#">IP</a>
+                <a href="#">HTTP</a>
+                <a href="#">FTP</a>
+                <a href="#">HTTPS</a>
+                <a href="#">IPV6</a>
+            
+            </div>
+        </div>
+            
+            
+            
+        <p> The abbreviation with small descriptions are going to be stated in the following section:</p>
+    <dl> <!-- dl represents description list-->
+        <dt> &lt; TCP &gt; </dt>
+        <dd> Transmission Control Protocol </dd>
+        <dt> IP</dt>
+        <dd> Internet Protrocol</dd>
+        <dt>HTTP</dt>
+        <dd>HyperText Transfer Protocol</dd>
+        <dt>FTP</dt>
+        <dd>File Transfer Protocol</dd>
+    </dl>
+    
+            
+            <p>Table properties in HTML</p>
+            
+            <table border="1"><!-- To add the table you need table element. To add the border, you need to put 1 in the border property
+
+            to add a row, you need to use tr tag. To make it bold, you can you th, which defines table head-->
+                <tr>
+                    <th> Protocol Abbreviation</th>
+                    <th> Detailed Abbreviation</th>
+                </tr>
+                <tr>
+                    <td>TCP</td>
+                    <td>Transmission Control Protocol</td>
+                </tr>
+                <tr>
+                    <td>IP</td>
+                    <td>Internet Protocol</td>
+                </tr>
+                <tr>
+                    <td>HTTP</td>
+                    <td>Hypertext Transfer Protocol</td>
+                </tr>
+                
+                
+            </table>
+            
+        </div> 
+        
+    </body>
+</html>
