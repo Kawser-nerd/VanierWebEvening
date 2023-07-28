@@ -18,32 +18,46 @@
                     font-size: 100%;
             }
             .header{
-                width: 80%;
+                width: 100%;
                 margin-left: auto;
                 margin-right: auto;
                 margin-bottom: 10px;
                 /*background-image: url(background1.png);*/
             }
+            .header h1{
+                
+                color: aqua;
+                position: absolute;
+                top:15%;
+                left: 5%;
+                right: 30%;
+                
+            }
             
             .nav{
-                clear: both;
+                
                 float: left;
-                margin: auto;
-                width: 20%;
+                text-align: left;
+                
+                width: max-content;
+                margin-right: 2px;
+                background-color: bisque;
+                clear: right;
+                
             }
             .nav ul{
-            }
-            
-            .nav li{
                 
                 list-style-type: none;
             }
+            
+            .nav li{
+                display: block;
+                
+            }
             .nav a{
                 text-decoration: none;
-                display: block;
-                width: 60px; 
-                padding: 5px;
-                text-align: center;
+                /*padding-right: 5vw;*/
+                text-align: left;
             }
             /* Mouse Hover Property to change mouse position text bg color*/
             
@@ -53,9 +67,12 @@
             }
             
             .content{
+                
                 float: right;
+                position: relative;
                 margin-left: 10px;
-                width: 78%;
+                width: 80%;
+                
             }
             
             
@@ -104,6 +121,70 @@
                 background-color: bisque;
             }
             
+            .tableProperty{
+                border: 2px solid blue;
+             margin-left: auto;
+                margin-right: auto;
+                font-size: 13px;                
+            }
+            /*.tableProperty td:nth-of-type(even){
+                background-color: aqua;
+            }*/
+            .tableProperty td{
+                /*border: 5px dashed green;*/
+                width: 10vw;
+                padding: 5px;
+                text-align: center;
+                
+            }
+            .tableProperty th{
+                width: 10vw;
+                padding: 5px;
+                text-align: center;
+                font-size: 16px;
+                
+            }
+            
+             .tableProperty th:first-child{
+                background-color: aqua;
+            }
+            a:active{
+                color: brown;
+            }
+            
+            
+            .descriptionList{
+                
+                background-color: aquamarine;
+                border: 2px solid blue;
+                /*overflow: hidden;
+                box-sizing: border-box;
+                width: 100%;*/
+            }
+            
+            .descriptionList img{
+                
+                float: right; /*will pu the element to the right side of the page*/
+                clear: left;
+                margin: 5px;
+                padding: 3px;
+            }
+            
+           /* .imageCom{
+                float: right;
+                width: 210px;
+            }*/
+           
+            .footer{
+                clear: both;
+                
+                
+            }
+            .stickynote{
+                position: sticky;
+                top:10px;
+                
+            }
         </style>
         
 
@@ -111,19 +192,37 @@
     
     <!-- body Section -->
     <body class="wrapper">
+        <div class="stickynote"> <a href="#top">bring to top</a> </div>
         <!-- wrapper div-->
-        <div class="header">
-            <img src="Landscape-Color.png" width="100%">
+        <div class="header" id="top">
+            <img src="images/Landscape-Color.png" width="100%">
+            <h1> Natural Beauty</h1>
         </div>
         <div class="nav">
             <ul>
-                <li><a href="">Home</a></li>
-                <br>
-                <li><a href="">About</a></li>
-                <br>
-                <li><a href="">Old Page</a></li>
-                <br>
-                <li><a href="">External Events</a></li>
+                <li><a href="#">Home</a></li> <!-- # means locating in the same page -->
+                
+                <li><a href="#course">Course Plan</a></li>
+                
+                <li><a href="index.html">Old Page</a></li>
+                
+                <li><a href="#communicationProtocol">Communication <br> Protocol</a></li>
+                <li><a href="#tableData"> Table Data </a></li>
+                
+                <li> 
+                    <div class="dropdown">
+            <button class="dropbtn">Communication <br> Systems</button>
+            <div class="dropdown-content">
+                <a href="#">TCP</a>
+                <a href="#">IP</a>
+                <a href="#">HTTP</a>
+                <a href="#">FTP</a>
+                <a href="#">HTTPS</a>
+                <a href="#">IPV6</a>
+            
+            </div>
+        </div>
+                </li>
             </ul>
         </div>
         <div class="content">
@@ -133,7 +232,8 @@
         https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_hover
             -->
             
-            <h1>Section I: Course Plan</h1><!-- Heading tag.. the highest heading tag-->
+            <h1 id="course">Section I: Course Plan</h1><!-- Heading tag.. the highest heading tag-->
+            
         <p>All the classes and exams will take place in online. Students are required to <span>access their webcam during the exam time</span> and at the time of any assessments.
 Teacher will record the class and share that with the students after the class.</p> <!-- this tag is for putting paragram. If you want to put a paragraph of texts, you need to put them inside the paragraph tags
 
@@ -148,11 +248,23 @@ with paragraph tag we automatically gets a new line at the beginning and again g
     
     <!-- If you want to use blockquote, you have to put it seperate from a pragraph. YOu can do the same things here
 as you do inside a paragraph tag-->
-    <blockquote>
+    <article>
+        
         All the <em>class recordings, <mark>required documentation<sup>1</sup></mark> and tutorials</em> will be provided to students throughout the semester. The instructor is open to use and refer any online tutorials whenever required
-    </blockquote>
+        
+    </article>
     
-    
+    <p>
+        The Class Lectures are recorded and provided in <a  href="https://youtube.com/playlist?list=PLwKpGi8r7u0RXD6fFXmRhr_Mw93kwSij6" target="_blank">YouTube</a> for students record. Moreover, the class code examples are posted in the <a href="https://github.com/Kawser-nerd/VanierWebEvening" target="_blank">GitHub</a>.
+    </p>
+            
+    <article>
+        <a href="https://www.w3schools.com/html/" style="text-decoration: none; color: green" target="_blank">
+            <h4>W3 School</h4>
+            <p> This website discusses all kind of HTML elements and tutorial for you. You dont need to pay for it, its free!!!</p>
+            
+        </a>
+    </article>
         <!-- For any list items and elements, you can either put them inside a paragraph or you can put them
 as seperate element to anywhere in the page-->
     
@@ -165,23 +277,14 @@ as seperate element to anywhere in the page-->
         <!-- For any of the dropdown menu items, we need two div, one for the outer
         content, which is a link/button, then the inner items/entries, consider as inner items or entries or list menus-->
             
-        <div class="dropdown">
-            <button class="dropbtn">Communication Systems</button>
-            <div class="dropdown-content">
-                <a href="#">TCP</a>
-                <a href="#">IP</a>
-                <a href="#">HTTP</a>
-                <a href="#">FTP</a>
-                <a href="#">HTTPS</a>
-                <a href="#">IPV6</a>
-            
-            </div>
-        </div>
+        
             
             
-            
+    <div class="descriptionList" id="communicationProtocol">
+        <img src="images/communication.jpg" width="200px">
         <p> The abbreviation with small descriptions are going to be stated in the following section:</p>
-    <dl> <!-- dl represents description list-->
+        
+        <dl> <!-- dl represents description list-->
         <dt> &lt; TCP &gt; </dt>
         <dd> Transmission Control Protocol </dd>
         <dt> IP</dt>
@@ -190,14 +293,22 @@ as seperate element to anywhere in the page-->
         <dd>HyperText Transfer Protocol</dd>
         <dt>FTP</dt>
         <dd>File Transfer Protocol</dd>
-    </dl>
+        </dl>
     
+        
+    </div>        
+        <!--
+            <div class="imageCom">
+                
+            </div>
+        -->
+            
             
             <p>Table properties in HTML</p>
             
-            <table border="1"><!-- To add the table you need table element. To add the border, you need to put 1 in the border property
+        <!--    <table border="1"><!-- To add the table you need table element. To add the border, you need to put 1 in the border property
 
-            to add a row, you need to use tr tag. To make it bold, you can you th, which defines table head-->
+            to add a row, you need to use tr tag. To make it bold, you can you th, which defines table head
                 <tr>
                     <th> Protocol Abbreviation</th>
                     <th> Detailed Abbreviation</th>
@@ -215,10 +326,61 @@ as seperate element to anywhere in the page-->
                     <td>Hypertext Transfer Protocol</td>
                 </tr>
                 
-                
+            </table>-->
+            
+            <!-- We are going to create a table for three families, their children and their birthdate with name-->
+            
+            
+            <table class="tableProperty" border="1" id="tableData" >
+                <caption> Building 7272 Cote-Des-Neiges Inhabitants </caption> <!-- This element is required to put a caption for the table-->
+                <tr>
+                    <th id="familyno"> Family No</th>
+                    <th id="name"> Name</th>
+                    <th id="birthdate"> BirthDate</th>
+                    <th id="dod"> DoD</th>
+                </tr>
+                <tr>
+                    <td headers="familyno" rowspan="3" >Family One</td>
+                    <td>Taylor</td>
+                    <td colspan="2">19.08.91 - present</td>
+                    
+                </tr>
+                <tr>
+                    <td>Hudson</td>
+                    <td>15.09.94</td>
+                    <td>19.12.21</td>
+                </tr>
+                <tr>
+                    <td>Lita</td>
+                    <td colspan="2">15.03.99 - present</td>
+                </tr>
+                <tr>
+                    <td headers="familyno" rowspan="2">Family Two</td>
+                    <td>Sarah</td>
+                    <td>18.05.93</td>
+                    <td>28.04.20</td>
+                    
+                </tr>
+                <tr>
+                    <td>Elita</td>
+                    <td colspan="2">21.09.96 - Present </td>
+                </tr>
             </table>
             
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            
         </div> 
+        
+        <div class="footer">
+            <p><strong>Teacher Name</strong> : Kawser Wazed Nafi <br>
+            <strong>Email</strong> : <a href="mailto:kwnafi@yahoo.com">kwnafi@yahoo.com</a> <br>
+            <strong>cell</strong> : <a href="tel:888-999-1234">888-999-1234</a></p>
+        </div>
         
     </body>
 </html>
