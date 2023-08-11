@@ -1,0 +1,192 @@
+.wrapper{
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 90%;
+                    justify-content: center;
+                    background-color: beige;
+                    color: cadetblue;
+                    font-size: 100%;
+            }
+.layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+            .header{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 10px;
+                /*background-image: url(background1.png);*/
+            }
+            .header h1{
+                
+                color: aqua;
+                position: absolute;
+                top:10%;
+                left: 5%;
+                
+                
+            }
+            
+            .nav{
+                
+                /*float: left;
+                text-align: left;
+                
+                width: 100%;
+                margin-right: 2px;
+                background-color: bisque;
+                text-align: center;
+                clear: right;*/
+                
+                
+                
+                
+            }
+            .nav ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items:center;
+                
+                list-style-type: none;
+            }
+            
+            .nav li{
+                display: block;
+                
+            }
+            .nav a{
+                text-decoration: none;
+                /*padding-right: 5vw;*/
+                text-align: left;
+            }
+            /* Mouse Hover Property to change mouse position text bg color*/
+            
+            .nav a:hover{
+                background-color: bisque;
+                
+            }
+            
+            .content{
+                
+                /*float: right;*/
+                position: relative;
+                margin-left: 10px;
+                width: 100%;
+                
+            }
+            
+            
+            /*DropDown Menu contents*/
+            
+            .dropbtn{
+                background-color: beige;
+                border: none;
+                color: brown;
+                padding: 5px;
+                font-size: 16px;
+                
+            }
+            
+            .dropdown{
+                position: relative;
+                display: inline-block;
+            }
+            
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                background-color: bisque;
+                min-width: 150px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1; /*overlapping ratio.... 1 means no overlap*/
+            }
+            
+            .dropdown-content a{
+                color: brown;
+                padding: 10px;
+                text-decoration: none;
+                display: block;
+            }
+            
+            /*hover background color change*/
+            .dropdown-content a:hover{
+                background-color: burlywood;
+            }
+            
+            .dropdown:hover .dropdown-content{
+                display: block;
+            }
+            
+            .dropdown:hover .dropbtn{
+                background-color: bisque;
+            }
+            
+            .tableProperty{
+                border: 2px solid blue;
+             margin-left: auto;
+                margin-right: auto;
+                font-size: 13px;                
+            }
+            /*.tableProperty td:nth-of-type(even){
+                background-color: aqua;
+            }*/
+            .tableProperty td{
+                /*border: 5px dashed green;*/
+                width: 10vw;
+                padding: 5px;
+                text-align: center;
+                
+            }
+            .tableProperty th{
+                width: 10vw;
+                padding: 5px;
+                text-align: center;
+                font-size: 16px;
+                
+            }
+            
+             .tableProperty th:first-child{
+                background-color: aqua;
+            }
+            a:active{
+                color: brown;
+            }
+            
+            
+            .descriptionList{
+                
+                background-color: aquamarine;
+                border: 2px solid blue;
+                /*overflow: hidden;
+                box-sizing: border-box;
+                width: 100%;*/
+            }
+            
+            .descriptionList img{
+                
+                float: right; /*will pu the element to the right side of the page*/
+                clear: left;
+                margin: 5px;
+                padding: 3px;
+            }
+            
+           /* .imageCom{
+                float: right;
+                width: 210px;
+            }*/
+           
+            .footer{
+                clear: both;
+                
+                
+            }
+            .stickynote{
+                position: sticky;
+                top:10px;
+                
+            }   
+          }

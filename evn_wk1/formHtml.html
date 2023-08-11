@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/tabletCSS.css">
+    </head>
+    <form class="formApp" name="contactInfo">
+        <fieldset>
+            <legend><input type="search" placeholder="search" class="searchInfo"></legend>
+                
+                <label for="name">Name </label><input type="text" id="name" size="20px" maxlength="10"> 
+                <br>
+                <label>Email</label> <input type="email">
+                <br>
+                <label >Password </label><input type="password" >
+                <br>
+                Select Your preferred Browser
+                <br>
+            <!-- To get the selected checkbox/radio buttons, you need to get the value from the front-end to the backend
+            So, we need to put value for checkbox and radio buttons-->
+                <input type="checkbox" name="checkBoxPrac" value="Safari"> Safari
+                <br>
+                <input type="checkbox" name="checkBoxPrac"> Google Chrome
+                <br>
+                <input type="checkbox" name="checkBoxPrac"> Microsoft Edge
+            
+                <br>
+                Select your preferred German Car Brand
+                <br>
+                <input type="radio" name="checkBoxPrac" value="Audi"> Audi
+                <br>
+                <input type="radio" name="checkBoxPrac" value="BMW"> BMW
+                <br>
+                <input type="radio" name="checkBoxPrac" value="VW"> Volkswagon
+                <br>
+            
+                <br>
+                Reason for contacting 
+                <select multiple >
+                 <option value="Suggestion">Suggestion</option>
+                    <option>Query</option>
+                    <option>Complain</option>
+                    <option>Proposing</option>
+                    <option>Nothing Serious</option>
+                </select>
+                <br>
+                <textarea cols="40" rows="10">
+                </textarea>
+                <br>
+                <input class="submit" type="submit">
+                </fieldset>
+            </form>
+</html>

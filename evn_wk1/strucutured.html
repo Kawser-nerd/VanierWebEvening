@@ -7,8 +7,370 @@
     <!-- favicon: favourite Icon... the icon you want to view in the browser tap-->
     <link rel="icon" type="image/x-icon" href="favicon.jpg"> <!-- type is optional -->
         <!-- Embedded CSS-->
-        <style>
-            .wrapper{
+  <!--<style>
+      /* Media Query: Single page*/
+      @media only all and (max-width: 400px){
+         .wrapper{
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 90%;
+                    justify-content: center;
+                    background-color: beige;
+                    color: cadetblue;
+                    font-size: 100%;
+            }
+            .header{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 10px;
+                /*background-image: url(background1.png);*/
+            }
+            .header h1{
+                
+                color: aqua;
+                position: absolute;
+                top:10%;
+                left: 5%;
+                
+                
+            }
+            
+            .nav{
+                
+                /*float: left;
+                text-align: left;
+                */
+                width: 100%;
+                margin-right: 2px;
+                background-color: bisque;
+                text-align: center;
+                /*clear: right;*/
+                
+            }
+            .nav ul{
+                
+                list-style-type: none;
+            }
+            
+            .nav li{
+                display: block;
+                
+            }
+            .nav a{
+                text-decoration: none;
+                /*padding-right: 5vw;*/
+                text-align: left;
+            }
+            /* Mouse Hover Property to change mouse position text bg color*/
+            
+            .nav a:hover{
+                background-color: bisque;
+                
+            }
+            
+            .content{
+                
+                /*float: right;*/
+                position: relative;
+                margin-left: 10px;
+                width: 100%;
+                
+            }
+            
+            
+            /*DropDown Menu contents*/
+            
+            .dropbtn{
+                background-color: beige;
+                border: none;
+                color: brown;
+                padding: 5px;
+                font-size: 16px;
+                
+            }
+            
+            .dropdown{
+                position: relative;
+                display: inline-block;
+            }
+            
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                background-color: bisque;
+                min-width: 150px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1; /*overlapping ratio.... 1 means no overlap*/
+            }
+            
+            .dropdown-content a{
+                color: brown;
+                padding: 10px;
+                text-decoration: none;
+                display: block;
+            }
+            
+            /*hover background color change*/
+            .dropdown-content a:hover{
+                background-color: burlywood;
+            }
+            
+            .dropdown:hover .dropdown-content{
+                display: block;
+            }
+            
+            .dropdown:hover .dropbtn{
+                background-color: bisque;
+            }
+            
+            .tableProperty{
+                border: 2px solid blue;
+             margin-left: auto;
+                margin-right: auto;
+                font-size: 13px;                
+            }
+            /*.tableProperty td:nth-of-type(even){
+                background-color: aqua;
+            }*/
+            .tableProperty td{
+                /*border: 5px dashed green;*/
+                width: 10vw;
+                padding: 5px;
+                text-align: center;
+                
+            }
+            .tableProperty th{
+                width: 10vw;
+                padding: 5px;
+                text-align: center;
+                font-size: 16px;
+                
+            }
+            
+             .tableProperty th:first-child{
+                background-color: aqua;
+            }
+            a:active{
+                color: brown;
+            }
+            
+            
+            .descriptionList{
+                
+                background-color: aquamarine;
+                border: 2px solid blue;
+                /*overflow: hidden;
+                box-sizing: border-box;
+                width: 100%;*/
+            }
+            
+            .descriptionList img{
+                
+                float: right; /*will pu the element to the right side of the page*/
+                clear: left;
+                margin: 5px;
+                padding: 3px;
+            }
+            
+           /* .imageCom{
+                float: right;
+                width: 210px;
+            }*/
+           
+            .footer{
+                clear: both;
+                
+                
+            }
+            .stickynote{
+                position: sticky;
+                top:10px;
+                
+            }   
+          }
+      @media only all and (min-width: 400px) and (max-width: 850px){
+          .wrapper{
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 90%;
+                    justify-content: center;
+                    background-color: beige;
+                    color: cadetblue;
+                    font-size: 100%;
+            }
+            .header{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 10px;
+                /*background-image: url(background1.png);*/
+            }
+            .header h1{
+                
+                color: aqua;
+                position: absolute;
+                top:25%;
+                left: 5%;
+                right: 30%;
+                
+            }
+            
+            .nav{
+                
+                /*float: left;
+                text-align: left;
+                */
+                
+                margin-right: 2px;
+                background-color: bisque;
+                /*clear: right;*/
+                
+            }
+            .nav ul{
+                
+                list-style-type: none;
+            }
+            
+            .nav li{
+                display: inline-flex;
+                
+            }
+            .nav a{
+                text-decoration: none;
+                /*padding-right: 5vw;*/
+                text-align: left;
+            }
+            /* Mouse Hover Property to change mouse position text bg color*/
+            
+            .nav a:hover{
+                background-color: bisque;
+                
+            }
+            
+            .content{
+                
+                /*float: right;*/
+                position: relative;
+                margin-left: 10px;
+                width: 100%;
+                
+            }
+            
+            
+            /*DropDown Menu contents*/
+            
+            .dropbtn{
+                background-color: beige;
+                border: none;
+                color: brown;
+                padding: 5px;
+                font-size: 16px;
+                
+            }
+            
+            .dropdown{
+                position: relative;
+                display: inline-block;
+            }
+            
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                background-color: bisque;
+                min-width: 150px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1; /*overlapping ratio.... 1 means no overlap*/
+            }
+            
+            .dropdown-content a{
+                color: brown;
+                padding: 10px;
+                text-decoration: none;
+                display: block;
+            }
+            
+            /*hover background color change*/
+            .dropdown-content a:hover{
+                background-color: burlywood;
+            }
+            
+            .dropdown:hover .dropdown-content{
+                display: block;
+            }
+            
+            .dropdown:hover .dropbtn{
+                background-color: bisque;
+            }
+            
+            .tableProperty{
+                border: 2px solid blue;
+             margin-left: auto;
+                margin-right: auto;
+                font-size: 13px;                
+            }
+            /*.tableProperty td:nth-of-type(even){
+                background-color: aqua;
+            }*/
+            .tableProperty td{
+                /*border: 5px dashed green;*/
+                width: 10vw;
+                padding: 5px;
+                text-align: center;
+                
+            }
+            .tableProperty th{
+                width: 10vw;
+                padding: 5px;
+                text-align: center;
+                font-size: 16px;
+                
+            }
+            
+             .tableProperty th:first-child{
+                background-color: aqua;
+            }
+            a:active{
+                color: brown;
+            }
+            
+            
+            .descriptionList{
+                
+                background-color: aquamarine;
+                border: 2px solid blue;
+                /*overflow: hidden;
+                box-sizing: border-box;
+                width: 100%;*/
+            }
+            
+            .descriptionList img{
+                
+                float: right; /*will pu the element to the right side of the page*/
+                clear: left;
+                margin: 5px;
+                padding: 3px;
+            }
+            
+           /* .imageCom{
+                float: right;
+                width: 210px;
+            }*/
+           
+            .footer{
+                clear: both;
+                
+                
+            }
+            .stickynote{
+                position: sticky;
+                top:10px;
+                
+            }
+      }
+      
+      @media only all and (min-width: 850px){
+          .wrapper{
                     margin-left: auto;
                     margin-right: auto;
                     width: 90%;
@@ -185,8 +547,30 @@
                 top:10px;
                 
             }
-        </style>
+      }
         
+        </style>-->
+        <!-- media query in css
+
+        This query helps the CSS file to know what type of devices we are using to view/ access the content and then help us to load the related css file/content.
+
+        Because of this, we can use multiple layout of the same page for different browsers/ devices based on their resolution
+
+        the syntax of media query
+
+        "and" keyword connected: only all and max/min -width: property
+
+        left side of the and keyword defines what type of devices you are using to view the content of the page. Whether you want to view that css layout on any kind of devices or only in mobile/desktop browser.
+
+        right side of the and keywork shows the device width you want to support by your css layout
+        -->
+        
+        <!--<link rel="stylesheet" type="text/css" href="css/PrintCSS.css" media="only print">
+        <link rel="stylesheet" type="text/css" media="only screen and (max-width: 450px)" href="css/mobileCSS.css">
+        <link rel="stylesheet" type="text/css" media="only screen and (min-width: 450px) and (max-width:900px)" href="css/tabletCSS.css" >
+        <!--<link rel="stylesheet" type="text/css" media="only screen and (min-width: 900px)" href="css/largeCSS.css" >-->
+        
+        <link rel="stylesheet" type="text/css"  href="css/tabletCSS.css" >
 
     </head>
     
@@ -195,9 +579,18 @@
         <div class="stickynote"> <a href="#top">bring to top</a> </div>
         <!-- wrapper div-->
         <div class="header" id="top">
-            <img src="images/Landscape-Color.png" width="100%">
-            <h1> Natural Beauty</h1>
+            
+            <!--<img src="images/Landscape-Color.png" width="100%">-->
+            <picture> <!-- This is HTML5 element to load more than one images with different devices and their width-->
+                <source media="(max-width: 450px)" srcset="images/Landscape-Color_mobile.png">
+                <source media="(min-width: 450px) and (max-width:900px)" srcset="images/Landscape-Color_tablet.png">
+                <source media="(min-width: 900px)" srcset="images/Landscape-Color.png">
+                <img src="images/Landscape-Color.png" width="100%"> 
+                
+            </picture>
+            
         </div>
+        
         <div class="nav">
             <ul>
                 <li><a href="#">Home</a></li> <!-- # means locating in the same page -->
@@ -225,6 +618,8 @@
                 </li>
             </ul>
         </div>
+        
+        <!--<div class="layout">-->
         <div class="content">
             
             <!-- Button Menu... Another option to have menu items in your program. You can use the following link to add button menu items in your program
@@ -257,7 +652,8 @@ as you do inside a paragraph tag-->
     <p>
         The Class Lectures are recorded and provided in <a  href="https://youtube.com/playlist?list=PLwKpGi8r7u0RXD6fFXmRhr_Mw93kwSij6" target="_blank">YouTube</a> for students record. Moreover, the class code examples are posted in the <a href="https://github.com/Kawser-nerd/VanierWebEvening" target="_blank">GitHub</a>.
     </p>
-            
+        </div>
+    <div class="descriptionList" id="communicationProtocol">
     <article>
         <a href="https://www.w3schools.com/html/" style="text-decoration: none; color: green" target="_blank">
             <h4>W3 School</h4>
@@ -280,7 +676,7 @@ as seperate element to anywhere in the page-->
         
             
             
-    <div class="descriptionList" id="communicationProtocol">
+    
         <img src="images/communication.jpg" width="200px">
         <p> The abbreviation with small descriptions are going to be stated in the following section:</p>
         
@@ -302,7 +698,7 @@ as seperate element to anywhere in the page-->
                 
             </div>
         -->
-            
+            <div class="tableProp">
             
             <p>Table properties in HTML</p>
             
@@ -329,8 +725,22 @@ as seperate element to anywhere in the page-->
             </table>-->
             
             <!-- We are going to create a table for three families, their children and their birthdate with name-->
-            
-            
+                
+                <!-- adding audio file with controls-->
+                <div class="multimedia">
+            <audio  controls controlslist="nodownload">
+            <source src="music/Unstoppable(PaglaSongs).mp3" type="audio/mp3">
+            <a href="music/Unstoppable(PaglaSongs).mp3"> Download the Music</a>
+        </audio>
+              <br>
+                <!-- adding video -->
+                
+            <video width="250px" height="150px" controls>
+                <source src="movies/file_example_MP4_640_3MG.mp4" type="video/mp4">
+                your browser doesn't support the file
+                <a href="movies/file_example_MP4_640_3MG.mp4"> Movie File</a>
+            </video>    
+            </div>
             <table class="tableProperty" border="1" id="tableData" >
                 <caption> Building 7272 Cote-Des-Neiges Inhabitants </caption> <!-- This element is required to put a caption for the table-->
                 <tr>
@@ -366,16 +776,22 @@ as seperate element to anywhere in the page-->
                     <td colspan="2">21.09.96 - Present </td>
                 </tr>
             </table>
+                
+        <!-- Adding audio file with Controller-->
+                
+        
             
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+            
             
             
         </div> 
         
+        <div class="contactUS">
+            <iframe src="formHtml.html" width="350" height="200">
+            </iframe>
+            
+        </div>
+        <!--</div>-->
         <div class="footer">
             <p><strong>Teacher Name</strong> : Kawser Wazed Nafi <br>
             <strong>Email</strong> : <a href="mailto:kwnafi@yahoo.com">kwnafi@yahoo.com</a> <br>

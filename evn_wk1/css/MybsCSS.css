@@ -1,0 +1,18 @@
+.container{
+                    margin-left: auto;
+                    margin-right: auto;
+                    background-color: beige;
+                    justify-content: center;
+                    background-color: beige;
+                    color: cadetblue;
+                    font-size: 100%;
+    }
+
+.table tr:hover{
+    background-color: aqua;
+}
+.progress-bar{
+    width: 60%;
+    
+}
+           

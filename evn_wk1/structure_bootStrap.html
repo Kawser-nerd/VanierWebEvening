@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Online BootStrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+        <!-- Local BootStrap -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/MybsCSS.css">
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="container"><!-- Page Layout-->
+        
+            <section class="col-sm-12"> <!-- Image with Header-->
+            
+                <img src="images/Landscape-Color.png" width="100%">
+            </section>
+            <nav class="navbar  navbar-expand-sm bg-light justify-content-center"><!-- Navigation-->
+            
+                <div class="container-fuild">
+                <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li> <!-- # means locating in the same page -->
+                
+                <li class="nav-item"><a class="nav-link" href="#course">Course Plan</a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="index.html">Old Page</a></li>
+                
+                <li class="nav-item"><a class="nav-link"href="#communicationProtocol">Communication <br> Protocol</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tableData"> Table Data </a></li>
+                </ul>
+                </div>
+            </nav>
+            <section class="row"> <!-- Body -->
+                <div class="col-sm-12 col-md-7 col-lg-5">
+                    <h1 class="display-3">Section I: Course Plan</h1><!-- Heading tag.. the highest heading tag-->
+        <p>All the classes and exams will take place in online. Students are required to <span class="content">access their webcam during the exam time</span> and at the time of any assessments.
+Teacher will record the class and share that with the students after the class.</p> <!-- this tag is for putting paragram. If you want to put a paragraph of texts, you need to put them inside the paragraph tags
+
+with paragraph tag we automatically gets a new line at the beginning and again gets another at the end-->
+    
+    <h3>Section II: Require Textbook/Materials</h3>
+                    <p><abbr>No specific</abbr> book is recommended. The student can use any related textbook<sub>*</sub> for learning the materials.
+        <br> <!-- you can put/use any other tags/html elements insider the paragraph tags.i.e. br is here to put a line break-->
+        <br>
+        
+    </p>
+    
+    <!-- If you want to use blockquote, you have to put it seperate from a pragraph. YOu can do the same things here
+as you do inside a paragraph tag-->
+    <blockquote class="alert-info">
+        All the <em>class recordings, <mark>required documentation<sup>1</sup></mark> and tutorials</em> will be provided to students throughout the semester. The instructor is open to use and refer any online tutorials whenever required
+    </blockquote>
+    <p class="text-muted">
+        The Class Lectures are recorded and provided in <a class="btn btn-primary" href="https://youtube.com/playlist?list=PLwKpGi8r7u0RXD6fFXmRhr_Mw93kwSij6" target="_blank">YouTube</a> for students record. Moreover, the class code examples are posted in the <a href="https://github.com/Kawser-nerd/VanierWebEvening" target="_blank">GitHub</a>.
+    </p>
+        </div>
+                <div class="col-sm-12 col-md-5 col-lg-4 descriptionList">
+                    
+                    <article>
+        <a href="https://www.w3schools.com/html/" style="text-decoration: none; color: green" target="_blank">
+            <h4>W3 School</h4>
+            <p> This website discusses all kind of HTML elements and tutorial for you. You dont need to pay for it, its free!!!</p>
+            
+        </a>
+    </article>
+        <!-- For any list items and elements, you can either put them inside a paragraph or you can put them
+as seperate element to anywhere in the page-->
+    
+    <p>  
+        There are several ways by which we can communicate with a server from client side using internet/networking systems. They are:
+    </p>
+        
+        
+        <!-- Dropdown Menu things -->
+        <!-- For any of the dropdown menu items, we need two div, one for the outer
+        content, which is a link/button, then the inner items/entries, consider as inner items or entries or list menus-->
+            
+        
+            
+            
+    
+        <img src="images/communication.jpg" class="rounded float-end" width="200px">
+        <p> The abbreviation with small descriptions are going to be stated in the following section:</p>
+        
+        <dl> <!-- dl represents description list-->
+        <dt> &lt; TCP &gt; </dt>
+        <dd> Transmission Control Protocol </dd>
+        <dt> IP</dt>
+        <dd> Internet Protrocol</dd>
+        <dt>HTTP</dt>
+        <dd>HyperText Transfer Protocol</dd>
+        <dt>FTP</dt>
+        <dd>File Transfer Protocol</dd>
+        </dl>
+
+                    
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 table-responsive-sm">
+                    <p>Table properties in HTML</p>
+            
+        <!--    <table border="1"><!-- To add the table you need table element. To add the border, you need to put 1 in the border property
+
+            to add a row, you need to use tr tag. To make it bold, you can you th, which defines table head
+                <tr>
+                    <th> Protocol Abbreviation</th>
+                    <th> Detailed Abbreviation</th>
+                </tr>
+                <tr>
+                    <td>TCP</td>
+                    <td>Transmission Control Protocol</td>
+                </tr>
+                <tr>
+                    <td>IP</td>
+                    <td>Internet Protocol</td>
+                </tr>
+                <tr>
+                    <td>HTTP</td>
+                    <td>Hypertext Transfer Protocol</td>
+                </tr>
+                
+            </table>-->
+            
+            <!-- We are going to create a table for three families, their children and their birthdate with name-->
+                
+                <!-- adding audio file with controls-->
+                <div class="multimedia">
+            <audio  controls controlslist="nodownload">
+            <source src="music/Unstoppable(PaglaSongs).mp3" type="audio/mp3">
+            <a href="music/Unstoppable(PaglaSongs).mp3"> Download the Music</a>
+        </audio>
+              <br>
+                <!-- adding video -->
+                
+            <video width="250px" height="150px" controls>
+                <source src="movies/file_example_MP4_640_3MG.mp4" type="video/mp4">
+                your browser doesn't support the file
+                <a href="movies/file_example_MP4_640_3MG.mp4"> Movie File</a>
+            </video>    
+            </div>
+                    <div class="progress">
+                    <div class="progress-bar progress-bar-striped" >55</div>
+                    </div>
+            <table class="table table-bordered " border="3" id="tableData" >
+                <caption> Building 7272 Cote-Des-Neiges Inhabitants </caption> <!-- This element is required to put a caption for the table-->
+                <tr>
+                    <th id="familyno"> Family No</th>
+                    <th id="name"> Name</th>
+                    <th id="birthdate"> BirthDate</th>
+                    <th id="dod"> DoD</th>
+                </tr>
+                <tr>
+                    <td headers="familyno" rowspan="3" >Family One</td>
+                    <td>Taylor</td>
+                    <td colspan="2">19.08.91 - present</td>
+                    
+                </tr>
+                <tr>
+                    <td>Hudson</td>
+                    <td>15.09.94</td>
+                    <td>19.12.21</td>
+                </tr>
+                <tr>
+                    <td>Lita</td>
+                    <td colspan="2">15.03.99 - present</td>
+                </tr>
+                <tr>
+                    <td headers="familyno" rowspan="2">Family Two</td>
+                    <td>Sarah</td>
+                    <td>18.05.93</td>
+                    <td>28.04.20</td>
+                    
+                </tr>
+                <tr>
+                    <td>Elita</td>
+                    <td colspan="2">21.09.96 - Present </td>
+                </tr>
+            </table>
+                
+
+                </div>
+                
+                
+            </section>
+            <section class="row"> <!-- Contact US & footer-->
+                <div class="col-sm-12 col-md-6"> <!-- Footer Part-->
+                    <h2>Contact to Teacher</h2>
+                    <p><strong>Teacher Name</strong> : Kawser Wazed Nafi <br>
+            <strong>Email</strong> : <a href="mailto:kwnafi@yahoo.com">kwnafi@yahoo.com</a> <br>
+            <strong>cell</strong> : <a href="tel:888-999-1234">888-999-1234</a></p>
+                    <div class="spinner-border">Test1</div>
+                    <div class="spinner-border text-muted"></div>
+                    <div class="spinner-border text-warning"></div>
+                    
+                    <br>
+                    <div class="spinner-grow"></div>
+                    <div class="spinner-grow text-muted"></div>
+                    <div class="spinner-grow text-warning"></div>
+                    
+                </div>
+                <div class="col-sm-12 col-md-6"> <!-- Contact US -->
+                    <h1>Contact Us</h1>
+                <iframe src="formHtml.html" width="100%" height="200">
+            </iframe>
+                    
+                </div>
+            </section>
+            
+        
+        </div>
+    </body>
+</html>
